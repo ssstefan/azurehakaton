@@ -51,7 +51,7 @@ public class UserEndpoint {
     @GET
     @Path("/{ime}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response hello(@PathParam("ime") String ime) {
+    public Response zdravo(@PathParam("ime") String ime) {
         HashMap hm = new HashMap();
         hm.put("hello", ime);
         return Response.ok().entity(hm).build();
